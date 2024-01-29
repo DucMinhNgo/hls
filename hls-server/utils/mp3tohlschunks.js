@@ -12,6 +12,7 @@ const startTime = new Date();
 console.info('> Start reading files', startTime);
 
 fs.readdir(dir, (readDirError, files) => {
+	console.log('run');
 	if (readDirError) {
 		console.error(readDirError);
 

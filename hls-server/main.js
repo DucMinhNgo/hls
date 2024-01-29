@@ -1,12 +1,13 @@
 var http = require('http');
 var fs = require('fs');
 
-const port = 3001
+const port = 6001
 
 http.createServer(function (request, response) {
     console.log('request starting...');
 
     var filePath = './temp/chunks' + request.url;
+    console.log({filePath});
 
     fs.readFile(filePath, function (error, content) {
         response.writeHead(200, { 'Access-Control-Allow-Origin': '*' });
@@ -28,4 +29,5 @@ http.createServer(function (request, response) {
     });
 
 }).listen(port);
+
 console.log(`Server running at http://127.0.0.1:${port}/`);

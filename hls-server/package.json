@@ -4,7 +4,7 @@
   "description": "hls demo in nodejs",
   "main": "main.js",
   "scripts": {
-    "start": "node main.js",
+    "start": "nodemon main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -19,12 +19,14 @@
     "hls-demo-nodejs",
     "hls-example-nodejs"
   ],
-  "author": "Sandip Basnet",
+  "author": "Dustin Pro",
   "license": "ISC",
   "dependencies": {
     "aws-sdk": "^2.1126.0",
     "dotenv": "^16.0.1",
+    "express": "^4.18.2",
     "fs": "^0.0.1-security",
-    "http": "^0.0.1-security"
+    "http": "^0.0.1-security",
+    "nodemon": "^3.0.1"
   }
 }

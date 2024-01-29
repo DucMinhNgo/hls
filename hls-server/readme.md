@@ -48,3 +48,6 @@ npm run start
 ```
 
 and request http://127.0.0.1:8000/0.m3u8 the manifest file will be downloaded, here to play the file you have to add one browser extension i.e. [Native HLS Playback](https://chrome.google.com/webstore/detail/native-hls-playback/emnphkkblegpebimobpbekeedfgemhof), that should play the media file you have used. In the meantime, you can inspect the file sequence chunks requested by the client/browser from the server after every 10 seconds the chunk has been loaded.
+
+
+https://blog.postman.com/how-to-create-a-rest-api-with-node-js-and-express/

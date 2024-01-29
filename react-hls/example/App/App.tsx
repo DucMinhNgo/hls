@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 
 import HlsPlayer from '../../src';
 
@@ -28,6 +28,10 @@ function App() {
       playerRef?.current?.setAttribute('controls', 'true');
     }
   }
+
+  useEffect(() => {
+    _handleToggleControls()
+  }, [])
 
   return (
     <div>
@@ -65,7 +69,7 @@ function App() {
         <HlsPlayer
           loop={true}
           width="100%"
-          height="auto"
+          height="50"
           autoPlay
           playerRef={playerRef}
           src={hlsUrl}
